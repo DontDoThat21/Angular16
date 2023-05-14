@@ -41,7 +41,7 @@ export class ShowDepComponent implements OnInit {
   }
 
   deleteClick(item: { DepartmentId: any; }){
-    if(confirm('Are you sure??')){
+    if(confirm('Are you sure?')){
       this.service.deleteDepartment(item.DepartmentId).subscribe(data=>{
         alert(data.toString());
         this.refreshDepList();

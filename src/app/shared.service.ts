@@ -42,4 +42,8 @@ readonly APIUrl = "http://localhost:62093/Photos";
   deleteEmployee(val:any){
     return this.http.delete(this.APIUrl+'/Employee/',val)
   }
+
+  UploadPhoto(val:any){
+    return this.http.post(this.APIUrl+'/Employee/SaveFile', val);
+  }
 }
